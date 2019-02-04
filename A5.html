@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>INFS2150 Assignment 5</title>
+</head>
+
+<body bgcolor=#ddffff>
+
+<p>
+
+<h1>User Registration Form</h1>
+
+</p>
+
+<p>
+
+<font face="Arial">Please fill out the form and click on the SUBMIT button to register.</font>
+
+</p>
+
+<form name="my FORM" action="http://mediaweb.rmu.edu/cgi-bin/form-POST.cgi" method=POST target=_blank>
+
+<font size="5">Your USER ID: </font><input type=text name="UID" maxlength=16 /><br>
+
+<font size="5">Your PASSWORD: </font><input type=password name="PW" maxlength=8 />
+
+<br>
+
+<font face="Arial">If you forget your password, we may authenticate your identity by asking you a security question for your answer. Please pick a security question and provide your answer.</font>
+
+<br>
+
+<font size="5">Select a security question of your choice:</font>
+
+<br>
+
+<select name="Security Question">
+
+<option value="Mother's maiden name" selected>What is your mother's maiden name?</option>
+
+<option value="Place of birth">What is your place of birth?</option>
+
+<option value="Favorite pet">What is your favorite pet?</option>
+
+<option value="Hero">Who is your hero?</option>
+
+<option value="The word">What is the word?</option>
+
+</select>
+
+<br>
+
+<font size="5">Your answer to the Security Question is:</font>
+
+<br>
+
+<input type=text name="Security Answer" maxlength="64" />
+
+<br>
+
+<font face="Arial">Please also tell us about yourself.</font>
+
+<br>
+
+<table>
+
+<tr>
+
+	<td><font size="5">I am</font></td>
+
+	<td style="font-size: large"><input type=radio name=Gender value=F /> Female<br><input type=radio name=Gender value=M /> Male<br></td>
+
+	<td><font size="5">and</font></td>
+
+	<td style="font-size: large">
+
+		<input type=radio name=Age value=8orLess /> 8 or less
+
+		<br>
+
+		<input type=radio name=Age value=9to15 /> 9 to 15
+
+		<br>
+
+		<input type=radio name=Age value=16to25 /> 16 to 25
+
+		<br>
+
+		<input type=radio name=Age value=26to40 /> 26 to 40
+
+		<br>
+
+		<input type=radio name=Age value=41orabove /> 41 or above
+
+	<td><font size="5">years of age.</font></td>
+
+</tr>
+
+</table>
+
+<br>
+
+<font face="Arial">I will be interested in information about the following (check all that apply):</font>
+
+<br>
+
+<table style="font-size: large">
+
+<tr>
+
+	<td><input type=checkbox name=Interest value="Business News" /> Business News<br><input type=checkbox name=Interest value="Movie" /> Movie</td>
+
+	<td><input type=checkbox name=Interest value="Computer Games" /> Computer Games<br><input type=checkbox name=Interest value="Music" /> Music</td>
+
+	<td><input type=checkbox name=Interest value="Dating Service" /> Dating Service<br><input type=checkbox name=Interest value="Travel" /> Travel</td>
+
+</tr>
+
+</table>
+
+<br>
+
+<textarea name=Comment cols=64 rows=5>
+
+Please feel free to use this area to give us your comment:
+
+</textarea>
+
+<br>
+
+<font face="Arial">Thank You!</font>
+
+<br>
+
+<input type=submit value="SUBMIT FORM" />
+
+<input type=reset value="CLEAR FORM to RE-ENTER" />
+
+</p>
+
+</body>
+
+</html>
